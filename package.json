@@ -50,11 +50,14 @@
     "singleQuote": true
   },
   "dependencies": {
+    "formik": "^2.2.9",
     "jest-environment-jsdom": "^28.1.1",
     "msw": "^0.42.1",
+    "prop-types": "^15.8.1",
     "puppeteer": "^14.4.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "yup": "^0.32.11"
   }
 }

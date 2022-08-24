@@ -72,3 +72,32 @@ h1 {
   margin: 10px 0;
   color: white;
 }
+
+
+.links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link {
+  background-color: var(--color-primary-100);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+  gap: 10px;
+  align-items: center;
+}
+
+.link__hash {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link__link {
+  width: 40%;
+  overflow: hidden;
+  text-align: right;
+}

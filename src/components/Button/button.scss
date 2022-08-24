@@ -9,3 +9,9 @@
 .button--primary {
   --color-button: var(--color-primary-500);
 }
+
+.button--outline {
+  --color-button: var(--color-primary-500);
+  background-color: transparent;
+  color: var(--color-button);
+}

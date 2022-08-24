@@ -1,14 +1,14 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
 
 import './scss/index.scss';
 import Application from './Application';
+import Providers from './Providers';
 
 createRoot(document.querySelector('.root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <Providers>
       <Application />
-    </BrowserRouter>
+    </Providers>
   </React.StrictMode>
 );

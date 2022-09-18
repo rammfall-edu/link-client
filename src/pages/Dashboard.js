@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Formik, Form, Field } from 'formik';
+import { Formik, Form } from 'formik';
 import * as yup from 'yup';
 
 import Input from '../components/Input';
@@ -49,7 +49,7 @@ const Dashboard = () => {
           }}
         >
           <Form className="form">
-            <Field name="link" component={Input} label="Link" />
+            <Input name="link" label="Link" />
             <Button buttonType="submit">Create</Button>
           </Form>
         </Formik>

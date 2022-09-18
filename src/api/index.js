@@ -1,4 +1,4 @@
-const hostname = 'http://localhost:3000';
+const hostname = process.env.API_URL || 'http://localhost:3000';
 
 const request = async (url, method = 'GET', body = null) => {
   const headers = localStorage.token ? { token: localStorage.token } : {};

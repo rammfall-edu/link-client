@@ -1,6 +1,7 @@
 const { join, resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = (_, argv) => {
   const isDevelopment = argv.mode === 'development';
@@ -67,6 +68,7 @@ module.exports = (_, argv) => {
       new MiniCssExtractPlugin({
         filename: '[name].[fullhash].css',
       }),
+      new Dotenv(),
     ],
   };
 };

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Formik, Form, Field } from 'formik';
+import { Formik, Form } from 'formik';
 import { useNavigate } from 'react-router-dom';
 import * as yup from 'yup';
 
@@ -56,16 +56,10 @@ const Register = () => {
           }}
         >
           <Form className="form">
-            <Field name="email" component={Input} label="Email" />
-            <Field
-              name="password"
-              component={Input}
-              label="Password"
-              type="password"
-            />
-            <Field
+            <Input name="email" label="Email" />
+            <Input name="password" label="Password" type="password" />
+            <Input
               name="confirmPassword"
-              component={Input}
               label="Confirm password"
               type="password"
             />

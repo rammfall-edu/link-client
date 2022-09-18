@@ -1,14 +1,11 @@
 import React from 'react';
+import { useField } from 'formik';
 
 import './input.scss';
 
-const Input = ({
-  field: { name, onChange, onBlur, value },
-  form: { errors, touched },
-  label,
-  type = 'text',
-}) => {
-  const shownError = !!errors[name] && !!touched[name];
+const Input = ({ label, type = 'text', name }) => {
+  const [{ onChange, onBlur, value }, { touched, error }] = useField(name);
+  const shownError = !!error && !!touched;
 
   return (
     <div className="input">
@@ -23,7 +20,7 @@ const Input = ({
           value={value}
         />
       </label>
-      {shownError && <p className="input__message">{errors[name]}</p>}
+      {shownError && <p className="input__message">{error}</p>}
     </div>
   );
 };

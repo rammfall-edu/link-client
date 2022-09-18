@@ -51,13 +51,8 @@ const Login = () => {
           }}
         >
           <Form className="form">
-            <Field name="email" component={Input} label="Email" />
-            <Field
-              name="password"
-              component={Input}
-              label="Password"
-              type="password"
-            />
+            <Input name="email" label="Email" />
+            <Input name="password" label="Password" type="password" />
             <Button buttonType="submit" type="outline">
               Login
             </Button>
